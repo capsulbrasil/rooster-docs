@@ -4,6 +4,12 @@
 
 - [POST /api/order/insert/:id](): insere um pedido
 
+Parâmetros da rota:
+
+- `id`: id da integração
+
+Corpo da requisição:
+
 ```json
 {
   "event": "order_paid",
