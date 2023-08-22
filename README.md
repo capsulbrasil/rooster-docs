@@ -7,4 +7,4 @@ O **Rooster** é a engine de integrações utilizada na Capsul Brasil. Oferece u
 ## Features
 
 - inserção de pedidos
-
+- envio de informações de tracking
