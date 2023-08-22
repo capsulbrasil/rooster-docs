@@ -1,0 +1,27 @@
+{
+  "type": "integer",
+  "enforce": true,
+  "modifiers": [
+    "enforce"
+  ],
+  "__fields": {
+    "total": {
+      "type": "integer"
+    },
+    "count": {
+      "type": "integer",
+      "modifiers": [
+        "default_null"
+      ]
+    },
+    "per_page": {
+      "type": "integer"
+    },
+    "current_page": {
+      "type": "integer"
+    },
+    "total_pages": {
+      "type": "integer"
+    }
+  }
+}

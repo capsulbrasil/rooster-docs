@@ -1,0 +1,16 @@
+{
+  "__fields": {
+    "created": "created",
+    "authorized": "authorized",
+    "waiting_payment": "waiting_payment",
+    "paid": "paid",
+    "handling_products": "handling_products",
+    "on_carriage": "on_carriage",
+    "delivered": "delivered",
+    "cancelled": "cancelled",
+    "refused": "refused",
+    "invoiced": "invoiced",
+    "shipment_exception": "shipment_exception",
+    "chargeback": "chargeback"
+  }
+}

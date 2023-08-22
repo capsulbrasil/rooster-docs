@@ -1,0 +1,121 @@
+{
+  "array": true,
+  "modifiers": [
+    "enforce",
+    "default_null"
+  ],
+  "__fields": {
+    "token": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "string"
+    },
+    "effective_amount": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "payment_type": {
+      "type": "string"
+    },
+    "date_created": {
+      "type": "string"
+    },
+    "date_updated": {
+      "type": "string"
+    },
+    "billet_link": {
+      "type": "string"
+    },
+    "billet_code": {
+      "type": "string"
+    },
+    "receiver_name": {
+      "type": "string"
+    },
+    "receiver_document": {
+      "type": "string"
+    },
+    "products": {
+      "map": "products",
+      "array": true,
+      "type": "object",
+      "__fields": {
+        "code": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "plans": {
+          "type": "object",
+          "map": "plans",
+          "__fields": {
+            "code": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "customer": {
+      "map": "customer",
+      "type": "object",
+      "__fields": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "document_type": {
+          "type": "string"
+        },
+        "document": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        }
+      }
+    },
+    "shipping_address": {
+      "map": "shipping_address",
+      "type": "object",
+      "__fields": {
+        "zipcode": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "district": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "number": {
+          "type": "string"
+        },
+        "complement": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "__fields": {
+    "order_updated": {
+      "type": "string"
+    },
+    "order_paid": {
+      "type": "string"
+    }
+  }
+}
