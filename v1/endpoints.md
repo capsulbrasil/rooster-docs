@@ -57,6 +57,24 @@ Corpo da requisição:
 }
 ```
 
+### Payload
+| Propriedade       | Tipo              | Descrição                                 |
+| ---               | ---               | ---                                       |
+| event             | `EventType`       | evento de atualização do pedido           |
+| order             | `Order`           | conteúdo do pedido                        |
+
+### EventType
+
+```typescript
+type EventType =
+  | 'order_paid'
+  | 'order_updated'
+  | 'cart_reminder'
+```
+
+
+### Order
+
 | Propriedade       | Tipo              | Descrição                                 |
 | ---               | ---               | ---                                       |
 | token             | `string`          | identificador único do pedido             |
