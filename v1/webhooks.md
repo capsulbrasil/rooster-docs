@@ -12,16 +12,16 @@ Esse webhook envia as informações de tracking após as etiquetas de uma remess
 
 | Propriedade       | Tipo                  | Descrição                                 |
 | ---               | ---                   | ---                                       |
-| event             | `'tracking:update'`   | Constante representando o evento          |
-| integration_info  | `integration_info`    | Dados da integração                       |
-| tracking_info     | `Array<TrackingInfo>` | Dados de rastreio                         |
+| event             | `'tracking:update'`   | constante representando o evento          |
+| integration_info  | `integration_info`    | dados da integração                       |
+| tracking_info     | `Array<TrackingInfo>` | dados de rastreio                         |
 
 ### IntegrationInfo
 
-| Propriedade       | Tipo                  | Descrição                                                 |
-| ---               | ---                   | ---                                                       |
-| api_key           | `string?`             | Chave secreta da API                                      |
-| shipping_company  | `string?`             | identificador da transportadora responsável pelo frete    |
+| Propriedade       | Tipo                  | Descrição                                                   |
+| ---               | ---                   | ---                                                         |
+| api_key           | `string?`             | chave secreta da API                                        |
+| parner_key        | `string?`             | chave do cliente (incluído para compatibilidade retroativa) |
 
 
 ### TrackingInfo
