@@ -10,13 +10,12 @@ curl https://api-prod/api \
     -H 'Authorization: Bearer ey...'
 ```
 
-## [Endpoints](/v1/endpoints)
+## [Endpoints](/v1/endpoints.md)
 
 ### Pedidos
 
-- [POST /api/order/insert/:id](): insere um pedido
+- `POST /api/order/insert/:id`: insere um pedido
 
+## [Webhooks](/v1/webhooks.md)
 
-## [Webhooks](/v1/webhooks)
-
-- [inserção de tracking](/v1/webhhooks#)
+- [inserção de tracking](/v1/webhooks.md#atualização-de-tracking)

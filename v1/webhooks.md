@@ -10,27 +10,26 @@ Esse webhook envia as informações de tracking após as etiquetas de uma remess
 
 ### Tracking
 
-| Propriedade       | Tipo                  | Descrição                                 |
-| ---               | ---                   | ---                                       |
-| event             | `'tracking:update'`   | constante representando o evento          |
-| integration_info  | `integration_info`    | dados da integração                       |
-| tracking_info     | `Array<TrackingInfo>` | dados de rastreio                         |
+| Propriedade      | Tipo                  | Descrição                        |
+| ---------------- | --------------------- | -------------------------------- |
+| event            | `'tracking:update'`   | constante representando o evento |
+| integration_info | `IntegrationInfo`     | dados da integração              |
+| tracking_info    | `Array<TrackingInfo>` | dados de rastreio                |
 
 ### IntegrationInfo
 
-| Propriedade       | Tipo                  | Descrição                                                   |
-| ---               | ---                   | ---                                                         |
-| api_key           | `string?`             | chave secreta da API                                        |
-| parner_key        | `string?`             | chave do cliente (incluído para compatibilidade retroativa) |
-
+| Propriedade | Tipo      | Descrição                                                   |
+| ----------- | --------- | ----------------------------------------------------------- |
+| api_key     | `string?` | chave secreta da API                                        |
+| parner_key  | `string?` | chave do cliente (incluído para compatibilidade retroativa) |
 
 ### TrackingInfo
 
-| Propriedade       | Tipo                  | Descrição                                                   |
-| ---               | ---                   | ---                                                         |
-| token             | `string`              | identificador único da venda, como na plataforma de origem  |
-| shipping_company  | `ShippingCompany`     | identificador da transportadora responsável pelo frete      |
-| tracking_code     | `string`              | código de rastreio                                          |
+| Propriedade      | Tipo              | Descrição                                                  |
+| ---------------- | ----------------- | ---------------------------------------------------------- |
+| token            | `string`          | identificador único da venda, como na plataforma de origem |
+| shipping_company | `ShippingCompany` | identificador da transportadora responsável pelo frete     |
+| tracking_code    | `string`          | código de rastreio                                         |
 
 ### ShipppingCompany
 
@@ -47,18 +46,17 @@ type ShippingCompany =
 
 ```json
 {
-    "event": "tracking:update",
-    "integration_info": {
-        "api_key": "bla...",
-        "partner_key": "bla..."
-    },
-    "result": [
-      {
-        "token": "123123",
-        "shipping_provider": "correios",
-        "tracking_code": "PQ..."
-      }
-    ]
+  "event": "tracking:update",
+  "integration_info": {
+    "api_key": "bla...",
+    "partner_key": "bla..."
+  },
+  "result": [
+    {
+      "token": "123123",
+      "shipping_provider": "correios",
+      "tracking_code": "PQ..."
+    }
+  ]
 }
 ```
-
