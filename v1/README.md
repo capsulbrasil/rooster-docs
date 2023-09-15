@@ -14,7 +14,7 @@ curl https://api-prod/api \
 
 ### Pedidos
 
-- `POST /api/order/insert/:id`: insere um pedido
+- `POST /api/platform-postback/system/:id`: insere um pedido
 
 ## [Webhooks](/v1/webhooks.md)
 

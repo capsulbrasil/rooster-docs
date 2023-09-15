@@ -1,0 +1,44 @@
+{
+  "event": "order:paid",
+  "order": {
+    "token": "2000003508897196",
+    "amount": "50",
+    "effective_amount": "50",
+    "status": "paid",
+    "payment_type": "account_money",
+    "date_created": "2022-04-08T17:01:32.000-04:00",
+    "date_updated": "2022-04-08T17:01:32.000-04:00",
+    "billet_link": "https://linkboleto.com.br/643d954ed8503e51cb71b965",
+    "billet_code": "34191090652428617393016155530005193260000029700",
+    "receiver_name": "Usuário Teste",
+    "receiver_document": "99999999999",
+    "products": [
+      {
+        "code": "KWRD94TB6",
+        "name": "3 Frascos - MM",
+        "plans": {
+          "code": "KW1239TB6",
+          "name": "3 Frascos - MM",
+          "quantity": 1
+        }
+      }
+    ],
+    "customer": {
+      "document": "99999999999",
+      "email": "user@gmail.com",
+      "phone": "37999999999",
+      "document_type": "m",
+      "name": "Usuário Teste"
+    },
+    "shipping_address": {
+      "complement": "Apartamento 401",
+      "address": "Rua A",
+      "city": "Arcos",
+      "country": "BR",
+      "district": "Bairro B",
+      "number": "120",
+      "state": "MG",
+      "zipcode": "35588000"
+    }
+  }
+}

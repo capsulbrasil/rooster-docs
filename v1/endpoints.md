@@ -2,7 +2,7 @@
 
 ## Pedidos
 
-- `POST /api/order/insert/:id`: insere um pedido
+- `POST /api/platform-postback/system/:id`: insere um pedido
 
 Parâmetros da rota:
 
@@ -12,7 +12,7 @@ Corpo da requisição:
 
 ```json
 {
-  "event": "order_paid",
+  "event": "order:paid",
   "order": {
     "token": "2000003508897196",
     "amount": "50",
@@ -68,9 +68,9 @@ Corpo da requisição:
 
 ```typescript
 type EventType = 
-  | 'order_paid' 
-  | 'order_updated' 
-  | 'cart_reminder'
+  | 'order:paid' 
+  | 'order:updated' 
+  | 'cart:reminder'
 ```
 
 ### Order
