@@ -15,8 +15,8 @@ Corpo da requisição:
   "event": "order:created",
   "order": {
     "token": "2000003508897196",
-    "amount": "50",
-    "effective_amount": "50",
+    "amount": 50,
+    "effective_amount": 50,
     "status": "paid",
     "payment_type": "account_money",
     "date_created": "2022-04-08T17:01:32.000-04:00",
