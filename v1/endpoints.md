@@ -12,7 +12,7 @@ Corpo da requisição:
 
 ```json
 {
-  "event": "order:paid",
+  "event": "order:created",
   "order": {
     "token": "2000003508897196",
     "amount": "50",
@@ -68,7 +68,7 @@ Corpo da requisição:
 
 ```typescript
 type EventType = 
-  | 'order:paid' 
+  | 'order:created' 
   | 'order:updated' 
   | 'cart:reminder'
 ```
