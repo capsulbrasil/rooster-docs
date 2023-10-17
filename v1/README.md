@@ -7,7 +7,7 @@ Para se autenticar na API deve-se enviar a chave obtida no cabeçalho HTTP `Auth
 ```sh
 curl https://api-prod/api \
     -H 'Content-type: application/json' \
-    -H 'Authorization: Bearer ey...'
+    -H 'X-Platform-Token: ey...'
 ```
 
 ## [Endpoints](/v1/endpoints.md)
