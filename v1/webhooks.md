@@ -2,7 +2,7 @@
 
 ## Verificação de autenticidade
 
-Os webhooks disparados pelo Rooster enviam o cabeçalho HTTP `X-User-Secret` para comprovação de autenticidade. Para fazer a verificação compare o header recebido com o valor obtido na página Integrações.
+Os webhooks disparados pelo Rooster enviam o cabeçalho HTTP `X-Platform-Token` para comprovação de autenticidade. Para fazer a verificação compare o header recebido com o valor obtido na página Integrações.
 
 ## Atualização de tracking
 
