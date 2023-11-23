@@ -14,14 +14,14 @@ Esse webhook envia as informações de tracking após as etiquetas de uma remess
 | ---------------- | --------------------- | -------------------------------- |
 | event            | `'tracking:update'`   | constante representando o evento |
 | integration_info | `IntegrationInfo`     | dados da integração              |
-| tracking_info    | `Array<TrackingInfo>` | dados de rastreio                |
+| result           | `Array<TrackingInfo>` | dados de rastreio                |
 
 ### IntegrationInfo
 
 | Propriedade | Tipo      | Descrição                                                   |
 | ----------- | --------- | ----------------------------------------------------------- |
 | api_key     | `string?` | chave secreta da API                                        |
-| parner_key  | `string?` | chave do cliente (incluído para compatibilidade retroativa) |
+| partner_key | `string?` | chave do cliente (incluído para compatibilidade retroativa) |
 
 ### TrackingInfo
 
