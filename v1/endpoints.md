@@ -28,11 +28,11 @@ Corpo da requisição:
     "products": [
       {
         "code": "KWRD94TB6",
-        "name": "3 Frascos - MM",
+        "name": "Produto Teste",
         "plans": {
-          "code": "KW1239TB6",
-          "name": "3 Frascos - MM",
-          "quantity": 1
+          "code": "KW1239TB6-3",
+          "name": "3 Frascos",
+          "quantity": 3
         }
       }
     ],
