@@ -10,6 +10,9 @@ Parâmetros da rota:
 
 Corpo da requisição:
 
+> [!WARNING]
+> Cada plano com quantidade diferente deve possuir um código único (ABCD-3, ABCD-5, etc).
+
 ```json
 {
   "event": "order:created",
