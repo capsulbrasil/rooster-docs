@@ -2,7 +2,7 @@
 
 ## Autenticação
 
-Para se autenticar na API deve-se enviar a chave obtida no cabeçalho HTTP `X-Platform-Token` juntamente com o prefixo "Bearer".
+Para se autenticar na API deve-se enviar a chave obtida no cabeçalho HTTP `X-Platform-Token`.
 
 ```sh
 curl https://api-prod/api \
