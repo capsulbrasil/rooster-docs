@@ -25,16 +25,16 @@ Esse webhook envia as informações de tracking após as etiquetas de uma remess
 
 ### TrackingInfo
 
-| Propriedade      | Tipo              | Descrição                                                  |
-| ---------------- | ----------------- | ---------------------------------------------------------- |
-| token            | `string`          | identificador único da venda, como na plataforma de origem |
-| shipping_company | `ShippingCompany` | identificador da transportadora responsável pelo frete     |
-| tracking_code    | `string`          | código de rastreio                                         |
+| Propriedade          | Tipo                | Descrição                                                  |
+| -------------------- | ------------------- | ---------------------------------------------------------- |
+| token                | `string`            | identificador único da venda, como na plataforma de origem |
+| shipping_provider    | `ShippingProvider`  | identificador da transportadora responsável pelo frete     |
+| tracking_code        | `string`            | código de rastreio                                         |
 
-### ShipppingCompany
+### ShippingProvider
 
 ```typescript
-type ShippingCompany =
+type ShippingProvider =
   | 'correios'
   | 'jadlog'
   | 'totalexpress'
