@@ -152,16 +152,3 @@ type PaymentType =
 | zipcode     | `string` | código postal (ex.: 35588000)   |
 | complement  | `string` | complemento                     |
 
-### ShippingAddress
-
-### Exemplo
-
-```json
-[
-  {
-    "token": "123123",
-    "shipping_provider": "correios",
-    "tracking_code": "PQ..."
-  }
-]
-```
