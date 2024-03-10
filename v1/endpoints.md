@@ -129,7 +129,7 @@ type PaymentType =
 | ----------- | -------------------- | ------------------------------ |
 | name        | `string`             | nome do produto                |
 | code        | `string`             | identificador único do produto |
-| plans       | `Array<ProductPlan>` | planos do produto              |
+| plans       | `ProductPlan`        | planos do produto              |
 
 ### ProductPlan
 
