@@ -35,6 +35,7 @@ Corpo da requisição:
         "plans": {
           "code": "KW1239TB6-3",
           "name": "3 Frascos",
+          "price": 12.50,
           "quantity": 3
         }
       }
