@@ -13,6 +13,9 @@ Corpo da requisição:
 > [!WARNING]
 > Cada plano com quantidade diferente deve possuir um código único (ABCD-3, ABCD-5, etc).
 
+> [!WARNING]
+> Os valores dos campos "amount", "effective_ammount" e "products.plans.price" devem ser enviados em reais (12.50), não em centavos (1250).
+
 ```json
 {
   "event": "order:created",
