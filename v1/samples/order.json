@@ -40,6 +40,16 @@
       "number": "120",
       "state": "MG",
       "zipcode": "35588000"
-    }
+    },
+    "commissions": [
+      {
+        "type": "Co-Produtor",
+        "percentage": 35,
+        "value": 50,
+        "name": "Empresa XXX",
+        "email": "empresaxxx@gmail.com",
+        "document": "4582361435333345"
+      }
+    ]
   }
 }
