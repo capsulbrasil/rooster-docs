@@ -59,7 +59,17 @@ Corpo da requisição:
       "number": "120",
       "state": "MG",
       "zipcode": "35588000"
-    }
+    },
+    "commissions": [
+      {
+        "type": "Co-Produtor",
+        "percentage": 35,
+        "value": 50,
+        "name": "Empresa XXX",
+        "email": "empresaxxx@gmail.com",
+        "document": "4582361435333345"
+      }
+    ]
   }
 }
 ```
@@ -154,5 +164,14 @@ type PaymentType =
 | number      | `string` | número                          |
 | state       | `string` | UF do brasil (ex.: MG, SP, etc) |
 | zipcode     | `string` | código postal (ex.: 35588000)   |
-| complement  | `string` | complemento                     |
 
+### Commissions
+
+| Propriedade | Tipo              | Descrição                       |
+| ----------- | ----------------- | ------------------------------- |
+| type        | `string`          | tipo do recebedor               |
+| percentage  | `number` (min: 0) | porcentagem recebida            |
+| value       | `number` (min: 0) | valor recebido                  |
+| name        | `string`          | nome do recebedor               |
+| email       | `string`          | email do recebedor              |
+| document    | `string`          | documento do recebedor          |
