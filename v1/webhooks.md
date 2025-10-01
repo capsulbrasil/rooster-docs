@@ -30,6 +30,8 @@ Esse webhook envia as informações de tracking após as etiquetas de uma remess
 | token                | `string`            | identificador único da venda, como na plataforma de origem |
 | shipping_provider    | `ShippingProvider`  | identificador da transportadora responsável pelo frete     |
 | tracking_code        | `string`            | código de rastreio                                         |
+| in_route             | `boolean`           | em rota                                                    |
+| was_received         | `boolean`           | foi recebido pelo cliente                                  |
 
 ### ShippingProvider
 
@@ -55,7 +57,9 @@ type ShippingProvider =
     {
       "token": "123123",
       "shipping_provider": "correios",
-      "tracking_code": "PQ..."
+      "tracking_code": "PQ...",
+      "in_route": false,
+      "was_received": false
     }
   ]
 }
