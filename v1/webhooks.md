@@ -40,6 +40,7 @@ type ShippingProvider =
   | 'correios'
   | 'jadlog'
   | 'totalexpress'
+  | 'jtexpress'
   | 'loggi'
   | 'carriers'
 ```
